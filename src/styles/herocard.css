@@ -1,0 +1,101 @@
+:root {
+  --card-border-radius: 20px;
+}
+
+.heroCardWrapper {
+  width: 254px;
+  height: 373px;
+  background: #ffffff;
+  border-radius: var(--card-border-radius);
+  position: relative;
+  flex-direction: column;
+  display: flex;
+}
+.heroImageContainer {
+  width: 100%;
+  border-radius: var(--card-border-radius);
+
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.heroImage {
+  height: inherit;
+  width: inherit;
+  border-radius: var(--card-border-radius);
+}
+
+.heroTopHalf {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  border-radius: var(--card-border-radius);
+}
+
+.heroName {
+  z-index: 12;
+  color: white;
+}
+
+.heroBottomHalf {
+  height: 100%;
+  width: 100%;
+  border-radius: var(--card-border-radius);
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.48);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.statsContainer {
+  display: flex;
+  width: 90%;
+  color: white;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.statsSeperateContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+}
+.stats {
+  border: 1px black solid;
+  color: black;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  justify-content: center;
+  align-items: center;
+}
+
+.int {
+  background-color: blue;
+}
+
+.str {
+  background-color: red;
+}
+
+.spd {
+  background-color: green;
+}
+
+.dur {
+  background-color: yellow;
+}
+
+.pwr {
+  background-color: orange;
+}
+
+.cmb {
+  background-color: palevioletred;
+}
