@@ -1,0 +1,13 @@
+.homeWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90%;
+}
+
+.homeHeader {
+  width: 90%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+}

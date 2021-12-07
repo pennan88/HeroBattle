@@ -1,11 +1,15 @@
 import http from "../SuperHeroAPI"
 
 
-const getCharacter = (name: string) => {
+const getCharacterbyId = (id: number) => {
+    return http.get(`/${id}`)
+}
+const getCharacterbyName = (name: string) => {
     return http.get(`/search/${name}`)
 }
 
 
 export default {
-    getCharacter
+    getCharacterbyId,
+    getCharacterbyName
 }

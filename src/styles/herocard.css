@@ -1,15 +1,39 @@
 :root {
   --card-border-radius: 20px;
 }
-
+.backgroundFiller {
+  width: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.267);
+  border-radius: var(--card-border-radius);
+  height: 100%;
+  z-index: 2;
+}
 .heroCardWrapper {
-  width: 254px;
-  height: 373px;
+  width: 200px;
+  height: 300px;
   background: #ffffff;
   border-radius: var(--card-border-radius);
   position: relative;
   flex-direction: column;
   display: flex;
+}
+
+.sm {
+  width: 200px;
+  height: 300px;
+}
+.md {
+  width: 300px;
+  height: 400px;
+}
+.lg {
+  width: 400px;
+  height: 500px;
+}
+.xl {
+  width: 500px;
+  height: 600px;
 }
 .heroImageContainer {
   width: 100%;
@@ -31,31 +55,31 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  z-index: 2;
+  z-index: 3;
   border-radius: var(--card-border-radius);
 }
 
 .heroName {
-  z-index: 12;
+  z-index: 3;
   color: white;
 }
 
 .heroBottomHalf {
   height: 100%;
   width: 100%;
-  border-radius: var(--card-border-radius);
-  z-index: 2;
-  background: rgba(0, 0, 0, 0.48);
+  z-index: 3;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
+  border-bottom-left-radius: var(--card-border-radius);
+  border-bottom-right-radius: var(--card-border-radius);
 }
 .statsContainer {
   display: flex;
   width: 90%;
   color: white;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 5px;
 }
 .statsSeperateContainer {
@@ -64,38 +88,210 @@
   align-items: center;
   text-transform: uppercase;
 }
+
+.statsSeperateContainer {
+  font-size: 10px;
+}
 .stats {
   border: 1px black solid;
   color: black;
   display: flex;
+  position: relative;
+
   justify-content: center;
   border-radius: 50%;
-  height: 35px;
-  width: 35px;
   justify-content: center;
   align-items: center;
+  color: black;
+}
+
+.stats p {
+  z-index: 2;
+}
+
+.test {
+  background-color: rgba(255, 255, 255, 0.479);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  z-index: 1;
 }
 
 .int {
   background-color: blue;
 }
 
+.int-sm {
+  height: 27px;
+  width: 27px;
+}
+.int-sm p {
+  font-size: 10px;
+}
+
+.int-md {
+  height: 37px;
+  width: 37px;
+}
+.int-md p {
+  font-size: 16px;
+}
+
+.int-lg {
+  height: 47px;
+  width: 47px;
+}
+
+.int-lg p {
+  font-size: 18px;
+}
+
 .str {
   background-color: red;
+}
+
+.str-sm {
+  height: 27px;
+  width: 27px;
+}
+
+.str-sm p {
+  font-size: 10px;
+}
+.str-md {
+  height: 37px;
+  width: 37px;
+}
+
+.str-md p {
+  font-size: 16px;
+}
+.str-lg {
+  height: 47px;
+  width: 47px;
+}
+.str-lg p {
+  font-size: 18px;
 }
 
 .spd {
   background-color: green;
 }
+.spd-sm {
+  height: 27px;
+  width: 27px;
+}
+.spd-sm p {
+  font-size: 10px;
+}
+.spd-md {
+  height: 37px;
+  width: 37px;
+}
+.spd-md p {
+  font-size: 16px;
+}
+.spd-lg {
+  height: 47px;
+  width: 47px;
+}
 
+.spd-lg p {
+  font-size: 18px;
+}
 .dur {
   background-color: yellow;
 }
-
+.dur-sm {
+  height: 27px;
+  width: 27px;
+}
+.dur-sm p {
+  font-size: 10px;
+}
+.dur-md {
+  height: 37px;
+  width: 37px;
+}
+.dur-md p {
+  font-size: 16px;
+}
+.dur-lg {
+  height: 47px;
+  width: 47px;
+}
+.dur-lg p {
+  font-size: 18px;
+}
 .pwr {
   background-color: orange;
 }
 
+.pwr-sm {
+  height: 27px;
+  width: 27px;
+}
+.pwr-sm p {
+  font-size: 10px;
+}
+.pwr-md {
+  height: 37px;
+  width: 37px;
+}
+.pwr-md p {
+  font-size: 16px;
+}
+.pwr-lg {
+  height: 47px;
+  width: 47px;
+}
+
+.pwr-lg p {
+  font-size: 18px;
+}
+
 .cmb {
   background-color: palevioletred;
+}
+
+.cmb-sm {
+  height: 27px;
+  width: 27px;
+}
+.cmb-sm p {
+  font-size: 10px;
+}
+.cmb-md {
+  height: 37px;
+  width: 37px;
+}
+.cmb-md p {
+  font-size: 16px;
+}
+.cmb-lg {
+  height: 47px;
+  width: 47px;
+}
+.cmb-lg p {
+  font-size: 18px;
+}
+.heroDescription {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 95%;
+  color: white;
+}
+
+.descLeft span {
+  display: flex;
+  margin: 3px 0;
+  color: white;
+  align-items: center;
+}
+
+.descLeft p {
+  color: white;
+  font-size: 12px;
 }

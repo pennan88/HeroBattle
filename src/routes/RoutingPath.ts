@@ -1,6 +1,10 @@
 const homeView = "/"
+const heroesView = "/HeroView"
+const battleView = "/BattleArena"
 
 
 export default {
-    homeView
+    homeView,
+    heroesView,
+    battleView
 }

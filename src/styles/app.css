@@ -1,13 +1,25 @@
+@font-face {
+  font-family: "BattleFont";
+  src: url("../shared/fonts/RedOut-PL5r.ttf");
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
+  letter-spacing: 1px;
   padding: 0;
+  font-family: "BattleFont", "Times New Roman", Times, serif;
 }
 
 body,
 html {
   margin: 0;
   padding: 0;
+}
+
+.appWrapper {
+  min-height: 100vh;
+  height: 100vh;
 }
