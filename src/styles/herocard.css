@@ -4,7 +4,7 @@
 .backgroundFiller {
   width: 100%;
   position: absolute;
-  background: rgba(0, 0, 0, 0.267);
+  background: rgba(0, 0, 0, 0.384);
   border-radius: var(--card-border-radius);
   height: 100%;
   z-index: 2;
@@ -12,11 +12,12 @@
 .heroCardWrapper {
   width: 200px;
   height: 300px;
-  background: #ffffff;
+  border: 1px white solid;
   border-radius: var(--card-border-radius);
   position: relative;
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .sm {
@@ -38,7 +39,6 @@
 .heroImageContainer {
   width: 100%;
   border-radius: var(--card-border-radius);
-
   height: 100%;
   position: absolute;
   z-index: 1;
@@ -51,9 +51,11 @@
 }
 
 .heroTopHalf {
-  height: 100%;
   width: 100%;
   display: flex;
+  margin-top: 5px;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   z-index: 3;
   border-radius: var(--card-border-radius);
@@ -64,16 +66,40 @@
   color: white;
 }
 
+.heroAlias {
+  z-index: 3;
+  color: white;
+}
+
 .heroBottomHalf {
-  height: 100%;
   width: 100%;
   z-index: 3;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   align-items: center;
   border-bottom-left-radius: var(--card-border-radius);
   border-bottom-right-radius: var(--card-border-radius);
+}
+.heroDescription {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 95%;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.descLeft span {
+  display: flex;
+  margin: 3px 0;
+  color: white;
+  align-items: center;
+}
+
+.descLeft p {
+  color: white;
+  margin-left: 5px;
+  font-size: 12px;
 }
 .statsContainer {
   display: flex;
@@ -86,12 +112,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 10px;
+  justify-content: center;
   text-transform: uppercase;
 }
 
-.statsSeperateContainer {
-  font-size: 10px;
-}
 .stats {
   border: 1px black solid;
   color: black;
@@ -275,23 +300,4 @@
 }
 .cmb-lg p {
   font-size: 18px;
-}
-.heroDescription {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  width: 95%;
-  color: white;
-}
-
-.descLeft span {
-  display: flex;
-  margin: 3px 0;
-  color: white;
-  align-items: center;
-}
-
-.descLeft p {
-  color: white;
-  font-size: 12px;
 }

@@ -11,3 +11,7 @@
   display: flex;
   justify-content: center;
 }
+
+.homeHeader h1 {
+  color: white;
+}
