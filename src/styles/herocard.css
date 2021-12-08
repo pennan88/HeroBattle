@@ -17,6 +17,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -51,24 +52,37 @@
 }
 
 .heroTopHalf {
-  width: 100%;
+  width: 90%;
   display: flex;
   margin-top: 5px;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   z-index: 3;
   border-radius: var(--card-border-radius);
 }
 
-.heroName {
+.powerLevel, .heroName, .heroAlias{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   z-index: 3;
-  color: white;
+  height: 100%;
+  width: 100%;
 }
 
-.heroAlias {
-  z-index: 3;
+.powerLevel p, .heroName p, .heroAlias p {
+  font-size: 10px;
   color: white;
+  font-weight: 900;
+}
+
+.powerLevel h4, .heroName h4, .heroAlias h4{
+  color: white;
+  font-size: 14px;
+  font-weight: 100;
+  text-align: center;
 }
 
 .heroBottomHalf {
@@ -122,7 +136,6 @@
   color: black;
   display: flex;
   position: relative;
-
   justify-content: center;
   border-radius: 50%;
   justify-content: center;
